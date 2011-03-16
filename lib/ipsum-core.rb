@@ -2,7 +2,7 @@
 # :main: README.rdoc
 # :title: Ipsum Documentation
 
-require 'ipsum/version'
+require 'ipsum-core/version'
 
 class Ipsum # :nodoc: all
 

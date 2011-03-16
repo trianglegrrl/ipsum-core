@@ -1,16 +1,16 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "ipsum/version"
+require "ipsum-core/version"
 
 Gem::Specification.new do |s|
-  s.name        = "ipsum"
-  s.version     = Ipsum::VERSION
+  s.name        = "ipsum-core"
+  s.version     = Ipsum::Core::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Clive Crous"]
   s.email       = ["clive@crous.co.za"]
   s.homepage    = "http://www.darkarts.co.za/ipsum"
-  s.summary     = %q{Quickly generate text-like filler ala Lorem Ipsum}
-  s.description = %q{Generate words or sentences for filler text while developing anything which requires text. Most people know this as "Lorem Ipsum". eg: require 'ipsum'; puts 10.sentences}
+  s.summary     = %q{This is the core engine of the ipsum gem, install that instead}
+  s.description = %q{This is the core engine of the ipsum gem, install that instead}
 
   s.add_development_dependency "bundler", ">= 1.0.0"
   s.add_development_dependency "rake", ">= 0.8.7"

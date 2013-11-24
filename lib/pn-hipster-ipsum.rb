@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 # :main: README.rdoc
-# :title: Ipsum Documentation
+# :title: PNHipsterIpsum Documentation
 
 require 'pn-hipster-ipsum/version'
 
-class Ipsum # :nodoc: all
+class PNHipsterIpsum # :nodoc: all
 
   SEQUENCE_SIZE = 3
 
@@ -73,8 +73,8 @@ class Fixnum
   # Generate filler text for this amount of sentences. For example:
   #   12.sentences
   #   5.sentences
-  def sentences( language = Ipsum.default_language )
-    Ipsum.sentences( self, language )
+  def sentences( language = PNHipsterIpsum.default_language )
+    PNHipsterIpsum.sentences( self, language )
   end
 
 end

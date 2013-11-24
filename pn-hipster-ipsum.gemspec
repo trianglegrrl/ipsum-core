@@ -4,7 +4,7 @@ require "pn-hipster-ipsum/version"
 
 Gem::Specification.new do |s|
   s.name        = "pn-hipster-ipsum"
-  s.version     = Ipsum::Core::VERSION
+  s.version     = PNHipsterIpsum::Core::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Alaina Hardie"]
   s.email       = ["alaina@precisionnutrition.com"]

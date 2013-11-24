@@ -1,11 +1,13 @@
 require 'bundler'
+require 'set'
+
 Bundler::GemHelper.install_tasks
 
 desc "Build dictionary"
-task :dictionary do
-  require 'ipsum'
+task :build_dictionary do
+  require 'pn-hipster-ipsum'
   dictionary = {}
-  File.readlines( './dictionaries/latin.txt' ).each do |word|
+  File.readlines( './dictionaries/hipster.txt' ).each do |word|
     letters = word.split('')
     sequence = ''
     letter_index = 0
@@ -21,4 +23,16 @@ task :dictionary do
   end
   dictionary[ '' ][0].delete( "\n" )
   p dictionary
+end
+
+task :extract_words do
+  require 'pn-hipster-ipsum'
+  f = File.open('./dictionaries/hipster-raw.txt')
+  dictionary = Set.new []
+  f.each_line do |line|
+    words = line.gsub('.', '').gsub(',','').split(' ')
+    dictionary = dictionary.merge words
+  end
+
+  dictionary.sort.each { |word| puts word }
 end

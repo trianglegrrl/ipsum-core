@@ -2,7 +2,7 @@
 # :main: README.rdoc
 # :title: Ipsum Documentation
 
-require 'ipsum-core/version'
+require 'pn-hipster-ipsum/version'
 
 class Ipsum # :nodoc: all
 
@@ -16,7 +16,7 @@ class Ipsum # :nodoc: all
   end
 
   def self.default_language
-    @default_language ||= :latin
+    @default_language ||= :hipster
   end
 
   def self.default_language=( language )
@@ -36,7 +36,7 @@ class Ipsum # :nodoc: all
     dict = dictionary( language )
     sequence_statistics = dictionary( language )[ sequence ][ position ]
     if sequence_statistics
-      letters = '' 
+      letters = ''
       sequence_statistics.each_pair do |character,amount|
         letters << character*amount
       end

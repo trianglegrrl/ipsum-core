@@ -1,16 +1,16 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "ipsum-core/version"
+require "pn-hipster-ipsum/version"
 
 Gem::Specification.new do |s|
-  s.name        = "ipsum-core"
+  s.name        = "pn-hipster-ipsum"
   s.version     = Ipsum::Core::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Clive Crous"]
-  s.email       = ["clive@crous.co.za"]
-  s.homepage    = "http://www.darkarts.co.za/ipsum"
-  s.summary     = %q{This is the core engine of the ipsum gem, install that instead}
-  s.description = %q{This is the core engine of the ipsum gem, install that instead}
+  s.authors     = ["Alaina Hardie"]
+  s.email       = ["alaina@precisionnutrition.com"]
+  s.homepage    = "http://precisionnutrition.om"
+  s.summary     = %q{This is the PN hipster ipsum gem, forked from https://github.com/clivecrous/ipsum-core}
+  s.description = %q{This is the PN hipster ipsum gem, forked from https://github.com/clivecrous/ipsum-core}
 
   s.add_development_dependency "bundler", ">= 1.0.0"
   s.add_development_dependency "rake", ">= 0.8.7"
